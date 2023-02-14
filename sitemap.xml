@@ -3,3 +3,28 @@
         <loc>https://savprk.github.io/WoodSaw/</loc>
         <priority>1.00</priority>
     </url>
+    <url>
+        <loc>https://savprk.github.io/WoodSaw/pages/about.html</loc>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://savprk.github.io/WoodSaw/pages/contact.html</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://savprk.github.io/WoodSaw/pages/shop.html</loc>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://savprk.github.io/WoodSaw/pages/poduct.html</loc>
+        <priority>0.60</priority>
+    </url>
+    <url>
+        <loc>https://savprk.github.io/WoodSaw/pages/profilecompany.html</loc>
+        <priority>0.50</priority>
+    </url>
+        <url>
+        <loc>https://savprk.github.io/WoodSaw/pages/companyHead.html</loc>
+        <priority>0.40</priority>
+    </url>
+</urlset>

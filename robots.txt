@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: admin.html
-Disallow: persone.html
+Disallow: pages/admin.html
+Disallow: pages/persone.html
 Allow: /
 Sitemap: https://savprk.github.io/WoodSaw/sitemap.xml

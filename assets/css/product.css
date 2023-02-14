@@ -1,0 +1,52 @@
+.startProduct{
+    background: url('../images/product.png');
+    width: 100%;
+    height: 944px;
+}
+/* .owlImage{
+    min-width: 1060px;
+} */
+.borderText{
+    background: #FFFFFF;
+    border: 3px solid #06960B;
+    box-shadow: 4px 4px 6px 2px rgba(6, 150, 11, 0.25);
+    width: 740px;
+    margin-top:50px;
+    margin-left: 120px;
+    margin-bottom: 100px;
+}
+.borderText span{
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    text-transform: uppercase;
+
+    color: #000000;
+    padding:23px 75px 23px 70px
+}
+.mainTxt{
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+    margin: 25px 190px;
+}
+h2{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+
+
+color: #06960B;
+margin: 25px 190px;
+}

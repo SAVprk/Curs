@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/hystModal-master/dist/hystmodal.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <title>Document</title>
+    <style>
+        h1 {
+           font-family: 'Roboto';
+           font-style: normal;
+           font-weight: 500;
+           font-size: 64px;
+           line-height: 75px;
+           margin: 170px 0 100px 0;
+       }
+       h2{
+           position: absolute;
+           font-family: 'Roboto';
+           font-style: normal;
+           font-weight: 500;
+           font-size: 40px;
+           line-height: 47px;
+           /* identical to box height */
+           color: #FFFFFF;
+           margin: 0 0 30px 30px;
+           text-transform: uppercase;
+           z-index: 2;
+           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+           
+       }
+       .owl-item span{
+           position: absolute;
+           font-family: 'Roboto';
+           font-style: normal;
+           font-weight: 500;
+           font-size: 20px;
+           line-height: 25px;
+           color: #FFFFFF;
+           z-index: 2;
+           text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+           display: block;
+           width: 50%;
+       }
+       .goods-slider h2,  .goods-slider span{
+           margin-left: calc(10% - 10px);
+           margin-top: calc(15% - 40px);
+       }
+       .goods-slider span{
+           margin-top: calc(20% - 40px);
+       }
+       .owlImage{
+           width:100%
+       }
+       @media screen and (max-width: 1024px){
+        h2{
+               color: #FFFFFF !important;
+               margin: 40px 0 15px calc(10% - 10px)!important;
+               z-index: 2;
+           } 
+           .owl-item span{
+           color: #FFFFFF;
+           margin: 115px auto 0 calc(10% - 10px);
+       }
+    }
+       @media screen and (max-width: 768px) {
+           h2{
+               font-size: 36px;
+               line-height: 32px;
+            /* identical to box height */
+               color: #FFFFFF !important;
+               margin: 15px 0 15px calc(50% - 42px) !important;
+               text-transform: uppercase;
+               z-index: 2;
+           }
+           .owl-item span{
+           position: absolute;
+           font-family: 'Roboto';
+           font-style: normal;
+           font-weight: 500;
+           font-size: 18px;
+           line-height: 30px;
+           color: #FFFFFF;
+           z-index: 2;
+           text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+           display: block;
+           width: 100%;
+           text-align: center;
+           margin: 75px auto 0 auto;
+       }
+       }
+       @media screen and (max-width: 425px){
+           h2{
+           font-size: 24px;
+           line-height: 32px;
+           /* identical to box height */
+           color: #FFFFFF !important;
+           margin: 15px 0 15px calc(50% - 42px) !important;
+           text-transform: uppercase;
+           z-index: 2;
+           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+           
+       }
+       .owl-item span{
+           position: absolute;
+           font-family: 'Roboto';
+           font-style: normal;
+           font-weight: 500;
+           font-size: 12px;
+           line-height: 12px;
+           color: #FFFFFF;
+           z-index: 2;
+           text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+           display: block;
+           width: 100%;
+           text-align: center;
+           margin: 50px auto 0 auto;
+       }
+       }
+   </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html"><div><img class="logoImg" src="assets/images/logo.svg" alt=""></div></a>
+            <a href="about.html"><div><span>О компании</span></div></a>
+            <a href="product.html"><div><span>Производство</span></div></a>
+            <a href="contact.html"><div><span>Контакты</span></div></a>
+            <a href="shop.html"><div><span>Продукция</span></div></a>
+            <div id="account-btn"><span>Личный кабинет</span><img class="accImg" src="assets/images/account.svg" alt=""></div>
+        </div>
+        <div class="bur-menu">
+            <a href="index.html"><div><img class="logoImg" src="assets/images/logo.svg" alt=""></div></a>
+            <div id="burger-menu-active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="burger" class="burger disp-none"> 
+                <div class="close">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="left-menu">
+                    <a href="about.html"><div><span>О компании</span></div></a>
+                    <a href="product.html"><div><span>Производство</span></div></a>
+                    <a href="contact.html"><div><span>Контакты</span></div></a>
+                    <a href="shop.html"><div><span>Продукция</span></div></a>
+                    <div id="account-btn" class="btn-in-burger"><span>Личный кабинет</span><img class="accImg" src="assets/images/account.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="goods-slider">
+            <div class=" loop owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <h2>Фанера</h2>
+                            <span>
+                                Изготавливается на основе 100% березового шпона, имеет стабильное высокое качество и соответствует всем требованиям российских и зарубежных стандартов
+                            </span>
+                            <button id="btn-goods" data-hystmodal="#goodModal">
+                                <span>Оставить заявку</span>
+                            </button>
+                            <img class="owlImage" src="assets/images/goods.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="serves">
+            <div class="serve-block fan">
+                <span>Заказать образцы</span>
+                <button id="btn-goods" data-hystmodal="#goodModal">
+                    <span>Оставить заявку</span>
+                </button>
+            </div>
+
+            <div class="serve-block spec">
+                <span>Консультация специалиста</span>
+                <button id="btn-goods" data-hystmodal="#goodModal">
+                    <span>Оставить заявку</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="hystmodal" id="goodModal" aria-hidden="true" >
+            <div class="hystmodal__wrap">
+                <div class="hystmodal__window" role="dialog" aria-modal="true" >
+                    <button data-hystclose class="hystmodal__close">Close</button>  
+                    <span class="modal-txt">Оставить заявку</span>
+                    <form class="talk-form" action="#" method="post">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Телефон">
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="upFoter">
+                <a href="index.html"><div><img class="logoImg" src="assets/images/logo.svg" alt=""></div></a>
+                <div class="footerTxt">
+                    <span >123112, Россия, г. Москва,
+                        Пресненская набережная,
+                        д. 10, блок С</span>
+                </div>
+                <div class="footerTxt">
+                    <span>+7 (999) 999 99 99</span>
+                    <span>mail@woodsaw.ru</span>
+                </div>
+                <div id="talk-btn" data-hystmodal="#myModal"><span>Написать нам</span></div>
+            </div>
+            <div class="lowerFoter">
+                <a href="about.html"><div><span>О компании</span></div></a>
+                <a href="product.html"><div><span>Производство</span></div></a>
+                <a href="contact.html"><div><span>Контакты</span></div></a>
+                <a href="shop.html"><div><span>Продукция</span></div></a>
+            </div>
+            <div class="copyRight">
+                <span></span>
+            </div>
+        </div>
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+      <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="assets/hystModal-master/dist/hystmodal.min.js"></script>
+    <script src="assets/js/shop.js"></script>
+    <script src="assets/js/menu.js"></script>
